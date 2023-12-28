@@ -4,6 +4,10 @@
 \newacronym{API}{API}{Application Programming Interface}
 \newacronym{OS}{OS}{Operating System}
 \newacronym{FOSS}{FOSS}{Free and Open Source Software}
+\newacronym{WM}{WM}{Window Manager}
+\newacronym{GUI}{GUI}{Graphical User Interface}
+\newacronym{TTY}{TTY}{teletypewriter}
+\newacronym{USB}{USB}{Universal Serial Bus}
 
 %Glossary
 \newglossaryentry{Glossar}
@@ -17,3 +21,115 @@
 	name=Kernel,
 	description={Ein Kernel, auch Betriebssystemkern, ist der zentrale Bestandteil eines Betriebssystems. In ihm ist die Prozess- und Datenorganisation festgelegt, auf der alle weiteren Softwarebestandteile des Betriebssystems aufbauen.}
 }
+\newglossaryentry{Embedded-System}
+{ 
+	name={Embedded-System},
+	description={Ein
+Embedded System ist ein spezieller Typ von Computersystem, der für eine
+bestimmte Aufgabe oder Funktion entwickelt wurde. Es ist in der Regel in einem
+größeren System eingebettet und wird oft in Geräten wie Haushaltsgeräten,
+Automobilen, medizinischen Geräten und Industrieanlagen eingesetzt. Embedded
+Systems sind darauf ausgelegt, spezifische Aufgaben zuverlässig und effizient
+auszuführen und haben in der Regel begrenzte Ressourcen, wie Prozessorleistung
+und Speicher. Sie spielen eine entscheidende Rolle in der modernen Technologie
+und sind in vielen Aspekten des täglichen Lebens weit verbreitet.}
+}
+
+\newglossaryentry{windowmanager}{ name={Window Manager (Linux)},
+description={Ein Window Manager ist eine Softwarekomponente in Linux- und
+Unix-basierten Betriebssystemen, die für das Management von Fenstern auf dem
+Bildschirm verantwortlich ist. Er ermöglicht das Erstellen, Verschieben,
+Minimieren und Maximieren von Fenstern sowie die Verwaltung der
+Fensterdekorationen. Window Manager spielen eine wichtige Rolle bei der
+Benutzeroberfläche von Linux-Systemen und bieten verschiedene Ansätze zur
+Fensterverwaltung, von einfachen Tiling-Managern bis hin zu komplexen
+Desktop-Umgebungen wie GNOME und KDE.} }
+
+\newglossaryentry{gui}{ name={GUI}, description={Die Abkürzung GUI steht für
+"Graphical User Interface" oder auf Deutsch "Grafische Benutzeroberfläche". Es
+handelt sich um eine visuelle Methode zur Interaktion mit einem Computer oder
+Softwareanwendungen. Eine GUI stellt grafische Elemente wie Fenster, Symbole,
+Schaltflächen und Menüs bereit, um Benutzern die Navigation und Interaktion mit
+dem System zu erleichtern. GUIs sind in der Regel intuitiver und
+benutzerfreundlicher als textbasierte Benutzeroberflächen (CLI) und werden in
+vielen Betriebssystemen und Anwendungsprogrammen eingesetzt.} }
+
+\newglossaryentry{tty}{ name={TTY}, description={TTY steht für "Teletypewriter"
+oder "TeleTYpewriter" und bezieht sich auf eine Art von textbasiertem Terminal
+in Unix-ähnlichen Betriebssystemen wie Linux. Eine TTY-Sitzung ermöglicht es
+Benutzern, textbasierte Befehle und Anwendungen auszuführen, ohne eine grafische
+Benutzeroberfläche zu verwenden. TTYs sind besonders nützlich für Aufgaben wie
+die Fernsteuerung von Systemen über eine SSH-Verbindung oder die Fehlerbehebung
+auf Ebene der Befehlszeile. In Linux sind TTYs numerisch nummeriert, zum
+Beispiel TTY1, TTY2, usw., und können über Tastenkombinationen wie "Ctrl+Alt+F1"
+aufgerufen werden.} }
+\newglossaryentry{tiling}
+{
+	name={Tiling},
+	description={
+		Tiling im Kontext \gls{WM} bedeutet, dass die Fenster in einem Rasterartigen Layout angezeigt werden und meist den vollen Bildschirm nutzen.
+	}
+}
+\newglossaryentry{bootloader}{ name={Bootloader}, description={Ein Bootloader
+ist ein kleines Programm oder eine Softwarekomponente, die beim Start eines
+Computers oder anderer elektronischer Geräte ausgeführt wird. Die Hauptaufgabe
+eines Bootloaders besteht darin, das Betriebssystem des Geräts zu initialisieren
+und zu laden. Dies geschieht, indem der Bootloader den Speicher nach dem
+Betriebssystem durchsucht und es in den Hauptspeicher (RAM) lädt, um die
+Ausführung zu starten. Der Bootloader ist in der Regel der erste Code, der nach
+dem Einschalten des Geräts ausgeführt wird, und spielt eine entscheidende Rolle
+im Bootvorgang. Es gibt verschiedene Bootloader für verschiedene Plattformen und
+Betriebssysteme, darunter auch solche für Computer, Smartphones und eingebettete
+Systeme.} }
+
+\newglossaryentry{xorg}{ name={X.Org}, description={X.Org, auch als X Window
+System oder X11 bezeichnet, ist ein Open-Source-Fenstersystem und Protokoll, das
+in Unix-ähnlichen Betriebssystemen wie Linux und BSD verwendet wird. Es dient
+dazu, grafische Benutzeroberflächen (GUIs) bereitzustellen und die Interaktion
+zwischen Benutzern und Anwendungen über Fenster, Mauszeiger und Tastatureingaben
+zu ermöglichen. X.Org bietet eine grundlegende Grundlage für die Anzeige und das
+Management von Fenstern auf dem Bildschirm, während Desktop-Umgebungen und
+Fenstermanager weitere Funktionen und Dienstprogramme hinzufügen, um eine
+komplette grafische Arbeitsumgebung bereitzustellen. Obwohl X.Org in den letzten
+Jahren von moderneren Display-Protokollen abgelöst wurde, bleibt es eine
+wichtige Komponente in vielen Unix-Systemen und ist für die Kompatibilität mit
+älterer Software von Bedeutung.} }
+
+\newglossaryentry{bootdriveusb}{ name={Bootdrive}, description={Ein
+Bootdrive ist ein --- meist \gls{USB} --- Massenspeichergerät, das verwendet wird, um ein
+Computerbetriebssystem oder eine bootfähige Software zu starten. Es enthält ein
+bootfähiges Betriebssystem oder eine bootfähige Anwendung, die in der Regel auf
+einem USB-Flash-Laufwerk oder einer USB-Festplatte gespeichert ist. Ein
+Bootdrive (USB) ermöglicht es einem Computer, von diesem externen USB-Gerät zu
+starten, anstatt von der internen Festplatte oder SSD. Dies ist nützlich, wenn
+Sie beispielsweise ein Betriebssystem neu installieren, Diagnosewerkzeuge
+ausführen oder auf ein anderes Betriebssystem zugreifen möchten, ohne die
+interne Festplatte zu ändern. Die Auswahl des Startgeräts erfolgt normalerweise
+über das BIOS oder UEFI des Computers, wodurch der Computer vom Bootdrive (USB)
+gestartet wird.} }
+
+\newglossaryentry{workstation}{ name={Workstation}, description={Eine
+Workstation ist ein leistungsstarker und spezialisierter Computer, der für
+anspruchsvolle Aufgaben im Bereich der Wissenschaft, Grafikdesign,
+Softwareentwicklung, 3D-Modellierung und anderen rechenintensiven Anwendungen
+konzipiert ist. Workstations zeichnen sich durch ihre hohe Rechenleistung,
+erweiterte Grafikfähigkeiten und die Fähigkeit zur Verarbeitung großer
+Datenmengen aus. Sie sind in der Regel mit professionellen Grafikkarten,
+schnellen Prozessoren und großem Arbeitsspeicher ausgestattet. Workstations
+werden häufig von Fachleuten in Bereichen wie CAD (Computer-Aided Design),
+Filmproduktion, wissenschaftlicher Forschung und Entwicklung, sowie in
+Unternehmen eingesetzt, die anspruchsvolle rechenintensive Aufgaben bewältigen
+müssen.} }
+
+\newglossaryentry{bash}{ name={Bash}, description={Bash steht für "Bourne-Again
+Shell" und ist eine weit verbreitete und leistungsstarke Unix-Shell, die auf
+vielen Unix-ähnlichen Betriebssystemen, einschließlich Linux und macOS,
+verwendet wird. Die Bash-Shell dient als Benutzerschnittstelle zur Interaktion
+mit dem Betriebssystem über die Befehlszeile. Sie ermöglicht Benutzern das
+Ausführen von Befehlen, das Erstellen von Skripten und die Automatisierung von
+Aufgaben in der Textumgebung. Die Bash bietet eine Vielzahl von Funktionen,
+darunter Befehlsverlauf, Tab-Vervollständigung, Umgebungsvariablen, Pipelining
+und die Möglichkeit, Skripte zu erstellen, um komplexe Aufgaben zu
+automatisieren. Aufgrund ihrer Flexibilität und Leistung ist die Bash eine der
+am häufigsten verwendeten Unix-Shells und ein unverzichtbares Werkzeug für
+Systemadministratoren, Entwickler und fortgeschrittene Benutzer.} }

@@ -1,0 +1,42 @@
+%!TEX root = ../Thesis.tex
+\section{Von \gls{bootdriveusb} bis \gls{workstation}}
+\subsection{Einleitung}
+
+Die Installation von Arch Linux ist ein Prozess, der Präzision und ein
+fundiertes Verständnis der zugrundeliegenden Technologien erfordert. Die
+folgenden Ausführungen bieten eine praxisnahe Anleitung zur Installation und
+Konfiguration von Arch Linux, ergänzt durch beispielhafte Befehle, die später in
+Codeblöcke integriert werden können.
+
+\subsection{Bootmedium erstellen}
+
+Der erste Schritt in der Installation von Arch Linux besteht darin, ein
+bootfähiges Medium (\gls{bootdriveusb}) zu erstellen. Dies erfolgt typischerweise durch das
+Herunterladen des neuesten Arch Linux ISO-Images von der offiziellen Website und
+dessen Übertragung auf einen USB-Stick. Ein häufig genutztes Tool hierfür ist dd.
+Beispielhaft könnte der Befehl zum Erstellen des Bootmediums wie folgt lauten:
+
+\begin{figure}[bht]
+    \begin{lstlisting}[caption={Command für \gls{bash}}]
+       dd bs=4M if=path/to/archlinux.iso of=/dev/sdx status=progress
+        oflag=sync 
+    \end{lstlisting}
+\end{figure}
+Hierbei steht /dev/sdx für den Pfad des USB-Laufwerks. Es ist entscheidend, den
+korrekten Laufwerkspfad zu wählen, um Datenverluste zu vermeiden.
+
+\subsection{Installation und Partitionierung}
+
+Nach dem Booten des Systems vom USB-Stick beginnt der eigentliche
+Installationsprozess. Dieser umfasst die Netzwerkkonfiguration, die
+Festplattenpartitionierung, die Formatierung der Partitionen und die
+Installation des Grundsystems.
+
+Die Partitionierung kann mittels fdisk oder parted erfolgen. Ein Beispielbefehl
+zur Partitionierung einer Festplatte (/dev/sda) wäre: siehe Listing \ref{lst:fdisk}
+\newpage
+\begin{figure}[bht]
+    \begin{lstlisting}[caption={Command für \gls{bash}}, label=lst:fdisk]
+        fdisk /dev/sda
+    \end{lstlisting}
+\end{figure}

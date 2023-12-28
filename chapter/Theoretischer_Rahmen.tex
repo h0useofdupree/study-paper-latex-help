@@ -1,7 +1,6 @@
 %!TEX root = ../Thesis.tex
 
-\section{Theoretischer Rahmen}
-\subsection{Geschichte und Entwicklung von Linux}
+\section{Geschichte und Entwicklung von Linux}
 Im Jahr 1991 neigte sich die Ära des Kalten Krieges dem Ende zu und leitete eine Zeit des Friedens und der Ruhe ein. Diese Periode war auch im Bereich der
 Computertechnologie von großer Bedeutung. Die Leistungsfähigkeit der
 Computerhardware überschritt alle Erwartungen, aber es gab immer noch eine Lücke
@@ -26,7 +25,7 @@ von Informatikstudenten weltweit, unter ihnen auch Linus Torvalds.\footcite[1]{H
 
 \newpage
 
-\subsection{Grundlagen von Betriebssystemen und Linux}
+\section{Grundlagen von Betriebssystemen und Linux}
 Linux, ein Kernstück der modernen Computertechnologie, steht im Zentrum
 zahlreicher Innovationen und Entwicklungen im Bereich der Betriebssysteme.
 \Glspl{OS} selbst sind die grundlegenden Softwarekomponenten eines
@@ -36,7 +35,7 @@ Computers und bieten Benutzern eine Schnittstelle für die Interaktion mit dem
 System.
 
 Die Besonderheit von Linux liegt in seinem Status als
-Open-Source-Betriebssystem. Entstanden in den frühen 1990er Jahren durch die
+\Gls{FOSS}-Betriebssystem. Entstanden in den frühen 1990er Jahren durch die
 Arbeit von Linus Torvalds, einem finnischen Studenten, hat sich Linux zu einer
 der wichtigsten Plattformen in der IT-Welt entwickelt. Im Gegensatz zu
 proprietären Betriebssystemen wie Windows von Microsoft oder macOS von Apple,
@@ -46,7 +45,7 @@ Entwicklern und Nutzern geschaffen, die ständig an der Verbesserung und
 Erweiterung des Systems arbeiten.
 
 Ein weiteres Kernmerkmal von Linux ist seine Vielseitigkeit. Linux kann auf
-einer Vielzahl von Hardwareplattformen eingesetzt werden, von Embedded-Systemen
+einer Vielzahl von Hardwareplattformen eingesetzt werden, von \Glspl{Embedded-System}
 und Mobilgeräten bis hin zu Supercomputern. Diese Flexibilität macht es zu einer
 attraktiven Wahl für viele verschiedene Anwendungen. Darüber hinaus sind
 Linux-Distributionen (oder ``Distros'') wie Ubuntu, Fedora und Debian in
@@ -66,7 +65,120 @@ und sind weniger anfällig für Viren und Malware als viele andere Betriebssyste
 Dies liegt teilweise an der Art und Weise, wie Linux Benutzerrechte verwaltet
 und wie die Gemeinschaft schnell auf Sicherheitslücken reagiert.
 
-Zusammenfassend ist Linux ein mächtiges, flexibles und sicheres Betriebssystem,
-das in einer Vielzahl von Umgebungen eingesetzt wird. Seine Entwicklung und
-anhaltende Verbesserung durch eine aktive Open-Source-Gemeinschaft machen es zu
-einer fortlaufenden Quelle der Innovation in der Welt der Betriebssysteme.
+\newpage
+
+\section{Wahl einer Linux-Distribution: Ein Vergleich zwischen Arch Linux und
+Debian-basierten Systemen Einleitung}
+
+
+Die Auswahl einer geeigneten Linux-Distribution ist ein entscheidender Schritt
+in der Konfiguration eines effizienten und zuverlässigen Arbeitsplatzes. Zwei
+Hauptkategorien in der Welt der Linux-Distributionen sind die Debian-basierten
+Systeme und die unabhängige Distribution Arch Linux. Ein grundlegendes
+Unterscheidungsmerkmal zwischen diesen Kategorien ist das Release-Modell:
+Rolling Release im Falle von Arch Linux und Fixed Release bei den meisten
+Debian-basierten Distributionen.
+
+\subsection{Debian-basierte Distributionen}
+
+Debian und seine Derivate, wie Ubuntu und Linux Mint, sind bekannt für ihre
+Stabilität und Benutzerfreundlichkeit. Sie folgen einem Fixed-Release-Modell,
+das bedeutet, Software-Versionen werden über einen festgelegten Zeitraum
+beibehalten und erhalten hauptsächlich Sicherheitsupdates und Fehlerbehebungen.
+Diese Eigenschaft macht Debian-basierte Systeme zu einer zuverlässigen Wahl für
+Anwender, die Wert auf Konsistenz und geringeres Risiko bei Software-Updates
+legen.
+
+\subsection{Arch Linux: Ein Rolling-Release-Modell}
+
+Im Gegensatz dazu steht Arch Linux, eine Distribution, die das
+Rolling-Release-Modell verfolgt. Bei diesem Modell werden Updates kontinuierlich
+bereitgestellt, sobald sie verfügbar sind, was bedeutet, dass Nutzer immer
+Zugriff auf die neuesten Versionen der Software haben. Dieser Ansatz erfordert
+von den Nutzern ein höheres Maß an Engagement und technischem Verständnis,
+bietet jedoch auch Vorteile in Bezug auf Aktualität und Zugang zu den neuesten
+Entwicklungen.
+
+\newpage
+\subsection{Arch Linux als bevorzugte Wahl}
+
+Die Entscheidung für Arch Linux kann aufgrund mehrerer Faktoren getroffen
+werden. Die Distribution ist bekannt für ihre Flexibilität und
+Anpassungsfähigkeit, was sie zu einer attraktiven Option für erfahrene Benutzer
+macht, die eine maßgeschneiderte Umgebung wünschen. Die Philosophie von Arch
+Linux, die auf Einfachheit und Transparenz abzielt, fördert ein tieferes
+Verständnis der Systemmechanismen.
+
+Darüber hinaus ermöglicht das Rolling-Release-Modell von Arch Linux den Nutzern,
+stets an der Spitze der Softwareentwicklung zu stehen, was besonders für
+diejenigen von Vorteil ist, die mit den neuesten Technologien arbeiten möchten.
+Diese kontinuierliche Aktualisierung kann jedoch auch eine Herausforderung in
+Bezug auf Systemstabilität und die Notwendigkeit regelmäßiger Wartung darstellen.
+
+\textbf{Fazit}
+
+Während Debian-basierte Distributionen für ihre Benutzerfreundlichkeit und
+Stabilität geschätzt werden, bietet Arch Linux durch sein Rolling-Release-Modell
+und seine anpassbare Natur erhebliche Vorteile für Nutzer, die nach einem
+dynamischen und hochgradig personalisierbaren System suchen. In Anbetracht
+dieser Aspekte erscheint Arch Linux als eine geeignete Wahl für Benutzer, die
+bereit sind, sich mit den technischen Aspekten des Betriebssystems
+auseinanderzusetzen und die die Vorteile eines stets aktuellen Systems zu
+schätzen wissen.
+
+\newpage
+
+\section{Grundlagen der Installation}
+\subsection{Arch Linux: Ein Überblick}
+
+Arch Linux stellt eine einzigartige Distribution im Bereich der
+Linux-Betriebssysteme dar, gekennzeichnet durch Prinzipien wie Einfachheit,
+Modernität und Pragmatismus. Im Gegensatz zu distributionsübergreifenden,
+vorkonfigurierten \glspl{OS} bietet Arch Linux seinen Nutzern ein
+minimalistisches Grundsystem, welches individuell erweitert und angepasst werden
+kann. Dieser Ansatz verlangt ein tiefgehendes Verständnis der Systemkomponenten
+und Konfigurationsprozesse vonseiten der Nutzer.
+
+\subsection{Installation und Konfiguration}
+
+Die Installation von Arch Linux ist ein Prozess, der präzise Handhabung und
+Kenntnis der Unix-Kommandos erfordert. Grundsätzlich beginnt der Prozess mit der
+Vorbereitung des Installationsmediums, gefolgt von der Partitionierung der
+Festplatte, der Einrichtung des Basissystems und der Konfiguration des Netzwerks.
+Im Anschluss erfolgt die Installation des \gls{bootloader}.
+
+\textbf{Integration von Wayland}
+
+Wayland, als der neueste Display-Server-Protokollstandard, löst zunehmend den
+traditionellen \gls{xorg} Server ab. Wayland bietet verbesserte Sicherheit, Effizienz
+und vereinfachte Architektur, die eine direktere Kommunikation zwischen
+Anwendungen und der Hardware ermöglicht. Die Implementierung von Wayland in Arch
+Linux ist ein exemplarisches Beispiel für den fortschrittlichen Ansatz der
+Distribution im Umgang mit modernen Technologien.
+
+Einrichtung des Tiling Window Managers Hyprland
+
+Hyprland, ein Wayland-kompatibler Tiling Window Manager, bietet eine dynamische
+und effiziente Methode zur Organisation und Verwaltung von Fenstern auf dem
+Desktop. Seine Konfiguration in Arch Linux erfordert die Installation relevanter
+Pakete und die sorgfältige Bearbeitung von Konfigurationsdateien. Hyprland
+zeichnet sich durch seine Leichtgewichtigkeit und hohe Anpassbarkeit aus, was es
+zu einer geeigneten Wahl für ein optimiertes und produktivitätsorientiertes
+Arbeitsumfeld macht.
+
+\textbf{Fazit}
+
+Die Installation von Arch Linux, kombiniert mit der Nutzung von Wayland und dem
+Tiling Window Manager Hyprland, stellt eine fortschrittliche Konfiguration dar,
+die sowohl tiefes technisches Wissen als auch eine bewusste Entscheidung für
+eine hochgradig personalisierte Computernutzung erfordert. Diese Kombination
+symbolisiert die Flexibilität und Leistungsfähigkeit, die Open-Source-Software
+in einem gut durchdachten System bieten kann.
+
+\begin{figure}[hbt]
+    \centering
+    \begin{minipage}[t]{1\textwidth}
+        \caption{Hyprland auf Arch Linux}
+        \includegraphics[width=1\textwidth]{img/hyprland-arch}
+    \end{minipage}
+\end{figure}
